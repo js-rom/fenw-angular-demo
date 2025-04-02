@@ -1,16 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TypescriptComponent } from "./typescript/typescript.component";
-import {FormsModule} from '@angular/forms';
 import { BindingComponent } from "./binding/binding.component";
+import { SubCompComponent } from './sub-comp/sub-comp.component';
+import { NumberComponent } from './core/number/number.component';
+import { SubCompJrvComponent } from "./sub-comp-jrv/sub-comp-jrv.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TypescriptComponent, FormsModule, BindingComponent],
+  imports: [RouterOutlet,
+    TypescriptComponent,
+    BindingComponent,
+    SubCompComponent,
+    NumberComponent, SubCompJrvComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-  title = 'fenw-angular-19-demo';
+  // sub-comp
+  title = 'Angular. Demo';
+  // Number
+  value = '';
+  valor = '';
+
+  processEvent(event: string) {
+    alert(event);
+  }
+
+  ngOnInit(): void {
+    // Se inicializa
+  }
 }

@@ -12,3 +12,17 @@
 <app-binding></app-binding>
 
 <hr>
+
+<h2>Sub-components</h2>
+<app-sub-comp [subComponentProperty]="title" (subComponentEvent)="processEvent($event)"></app-sub-comp>
+
+
+<number [min]="0" [max]="100" [value]="6" (valueOut)="value=$event.toString()"></number>
+<p>Valor del subcomponente Number (solo si es válido):{{value}}</p>
+
+<number (valueOut)="valor=$event.toString()"></number>
+<p>Valor:{{valor}}</p>
+
+<app-sub-comp-jrv  (valueOut)="processEvent($event)"></app-sub-comp-jrv>
+
+<hr>

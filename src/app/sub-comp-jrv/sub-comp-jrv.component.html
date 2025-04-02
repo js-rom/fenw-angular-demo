@@ -1,0 +1,6 @@
+<h3>Text</h3>
+<div>
+    <input type="text" name="text" placeholder="Introduce mas de 3 caracteres" [(ngModel)]="msg"
+    (blur)="onBlur()">
+    <p *ngIf="!isValid()">Debe introducir al menos 3 caráctreres</p>
+</div>
