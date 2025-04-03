@@ -1,0 +1,18 @@
+<h3>Read & Delete</h3>
+<ul *ngFor="let item of readAll()">
+    <li>
+        <input type="number" name="id" [(ngModel)]="item.id">
+        <input type="string" name="name" [(ngModel)]="item.name">
+        <button (click)="remove(item)">Delete</button>
+    </li>
+</ul>
+
+<form>
+    <input type="number" name="id" placeholder="Id" [(ngModel)]="userCreate.id">
+    <input type="string" name="name" placeholder="Name" [(ngModel)]="userCreate.name">
+    <button type="submit" (click)="add(fromUserCreate())" [disabled]="!isValidUser()">Create</button>
+</form>
+
+<p> 
+    <button type="submit" (click)="saveAll()">Save All</button>
+</p>

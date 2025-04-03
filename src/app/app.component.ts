@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TypescriptComponent } from "./typescript/typescript.component";
 import { BindingComponent } from "./binding/binding.component";
 import { SubCompComponent } from './sub-comp/sub-comp.component';
 import { NumberComponent } from './core/number/number.component';
 import { SubCompJrvComponent } from "./sub-comp-jrv/sub-comp-jrv.component";
+import { CrudComponent } from './crud/crud.component';
+import { CrudJrvComponent } from "./crud-jrv/crud-jrv.component";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,9 @@ import { SubCompJrvComponent } from "./sub-comp-jrv/sub-comp-jrv.component";
     TypescriptComponent,
     BindingComponent,
     SubCompComponent,
-    NumberComponent, SubCompJrvComponent],
+    NumberComponent,
+    SubCompJrvComponent,
+    CrudComponent, CrudJrvComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
