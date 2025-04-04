@@ -7,6 +7,7 @@ import { NumberComponent } from './core/number/number.component';
 import { SubCompJrvComponent } from "./sub-comp-jrv/sub-comp-jrv.component";
 import { CrudComponent } from './crud/crud.component';
 import { CrudJrvComponent } from "./crud-jrv/crud-jrv.component";
+import { PipeComponent } from "./pipe/pipe.component";
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ import { CrudJrvComponent } from "./crud-jrv/crud-jrv.component";
     SubCompComponent,
     NumberComponent,
     SubCompJrvComponent,
-    CrudComponent, CrudJrvComponent],
+    CrudComponent, CrudJrvComponent, PipeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
