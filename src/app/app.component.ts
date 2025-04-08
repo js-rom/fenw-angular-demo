@@ -10,6 +10,7 @@ import { CrudJrvComponent } from "./crud-jrv/crud-jrv.component";
 import { PipeComponent } from "./pipe/pipe.component";
 import { ObserverComponent } from "./observer/observer.component";
 import { ObserverJrvComponent } from "./observer-jrv/observer-jrv.component";
+import { ApiResponseComponent } from "./api-response/api-response.component";
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,7 @@ import { ObserverJrvComponent } from "./observer-jrv/observer-jrv.component";
     SubCompComponent,
     NumberComponent,
     SubCompJrvComponent,
-    CrudComponent, CrudJrvComponent, PipeComponent, ObserverComponent, ObserverJrvComponent],
+    CrudComponent, CrudJrvComponent, PipeComponent, ObserverComponent, ObserverJrvComponent, ApiResponseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
