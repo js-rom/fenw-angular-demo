@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TypescriptComponent } from "./typescript/typescript.component";
 import { BindingComponent } from "./binding/binding.component";
@@ -11,6 +11,7 @@ import { PipeComponent } from "./pipe/pipe.component";
 import { ObserverComponent } from "./observer/observer.component";
 import { ObserverJrvComponent } from "./observer-jrv/observer-jrv.component";
 import { ApiResponseComponent } from "./api-response/api-response.component";
+import { ApiGithubComponent } from "./api-github/api-github.component";
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,13 @@ import { ApiResponseComponent } from "./api-response/api-response.component";
     SubCompComponent,
     NumberComponent,
     SubCompJrvComponent,
-    CrudComponent, CrudJrvComponent, PipeComponent, ObserverComponent, ObserverJrvComponent, ApiResponseComponent],
+    CrudComponent, 
+    CrudJrvComponent, 
+    PipeComponent, 
+    ObserverComponent, 
+    ObserverJrvComponent, 
+    ApiResponseComponent, 
+    ApiGithubComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
