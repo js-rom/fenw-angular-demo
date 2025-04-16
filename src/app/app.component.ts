@@ -12,6 +12,7 @@ import { ObserverComponent } from "./observer/observer.component";
 import { ObserverJrvComponent } from "./observer-jrv/observer-jrv.component";
 import { ApiResponseComponent } from "./api-response/api-response.component";
 import { ApiGithubComponent } from "./api-github/api-github.component";
+import { ApiItemsComponent } from "./api-items/api-items.component";
 
 @Component({
   selector: 'app-root',
@@ -21,13 +22,14 @@ import { ApiGithubComponent } from "./api-github/api-github.component";
     SubCompComponent,
     NumberComponent,
     SubCompJrvComponent,
-    CrudComponent, 
-    CrudJrvComponent, 
-    PipeComponent, 
-    ObserverComponent, 
-    ObserverJrvComponent, 
-    ApiResponseComponent, 
-    ApiGithubComponent],
+    CrudComponent,
+    CrudJrvComponent,
+    PipeComponent,
+    ObserverComponent,
+    ObserverJrvComponent,
+    ApiResponseComponent,
+    ApiGithubComponent, 
+    ApiItemsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
